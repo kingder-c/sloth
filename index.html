@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>延迟加载sloth</title>
+<style>
+.demo img { width: 736px; height: 490px; background-color:#ddd;}
+</style>
+</head>
+<body>
+<div class="demo" style="width: 736px; margin: 0 auto;">
+	<img class="lazy" src="images/blank.gif" data-sloth="images/big-1.jpg">
+	<img class="lazy" src="images/blank.gif" data-sloth="images/big-2.jpg">
+	<img class="lazy" src="images/blank.gif" data-sloth="images/big-3.jpg">
+	<img class="lazy" src="images/blank.gif" data-sloth="images/big-4.jpg">
+	<img class="lazy" src="images/blank.gif" data-sloth="images/big-5.jpg">
+	<img class="lazy" src="images/blank.gif" data-sloth="images/big-6.jpg">
+	<img class="lazy" src="images/blank.gif" data-sloth="images/big-7.jpg">
+</div>
+<script src="src/sloth.js"></script>
+<script>
+Sloth.init({
+	offset: 0,
+	throttle: 0
+});
+</script>
+</body>
+</html>
